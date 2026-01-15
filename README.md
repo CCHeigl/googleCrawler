@@ -43,16 +43,23 @@ This will install:
 
 ### Basic Usage
 
-1. Open `index.js` and modify the search parameters in the `main()` function (around line 267):
-
-```javascript
-const branchName = 'medizingroßhändler'; // Change to your business type
-const postalCode = '44388';              // Change to your German postal code
-```
-
-2. Run the crawler:
+1. Run the crawler:
 ```bash
 npm start
+```
+
+2. The application will prompt you to enter:
+   - **Branche** (business type): e.g., `apotheke`, `zahnarzt`, `restaurant`
+   - **Postleitzahl** (postal code): e.g., `44388`, `10115`, `80331`
+
+Example:
+```
+=== Google Maps Crawler ===
+
+Bitte geben Sie die Branche ein (z.B. restaurants, zahnarzt, apotheke): apotheke
+Bitte geben Sie die Postleitzahl ein (z.B. 44388, 10001): 44388
+
+Starte Suche nach "apotheke" in "44388"...
 ```
 
 ### Customizing Search Parameters
